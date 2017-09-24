@@ -274,7 +274,7 @@ Above that, you can use compression parameter and reduce the corpus size even mo
 ## Speed benchmarks
 Direct corpus parsing is 50% slower per file, on the other hand, conversion to .h5 requires ~10-12h, ~2.5GB RAM and ~12GB of free space (~4.3GB compression=5).
 The fastest option is to parse the corpus and create .h5 file which contains delexicalized elements (int32). 
-Reading from this file is the very fast since the operation does not involve any intermediate preprocessing. 
+Reading from this file is very fast since the operation does not involve any intermediate preprocessing. 
 You can't apply word filter during reading only before .h5 creation. 
 
 ### I/O speed (per single xml file):
